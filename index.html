@@ -433,6 +433,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label class="footer-subscribe">
+            <span class="subscribe-txt">Subscribe</span>
+            <input
+              type="text"
+              name="email"
+              class="footer-input"
+              placeholder="Email"
+            />
+          </label>
+          <button type="submit" class="footer-btn">Subscribe</button>
+        </form>
       </div>
     </footer>
     <!--/FOOTER-->
@@ -503,6 +515,23 @@
               placeholder="Text input"
             ></textarea>
           </label>
+          <div class="modal-field">
+            <input
+              class="modal-check visually-hidden"
+              id="policy"
+              name="policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label for="policy" class="check-txt"
+              >I accept the terms and conditions of the<a
+                href="/"
+                class="check-link"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
           <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
@@ -511,3 +540,4 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+`
