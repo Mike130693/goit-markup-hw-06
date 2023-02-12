@@ -116,11 +116,10 @@ img {
   background: var(--modal-bckgrnd-color);
   box-shadow: var(--modal-shadow);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
-  margin-top: 48px;
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 16px;
@@ -218,6 +217,7 @@ img {
 }
 .modal-close {
   position: absolute;
+  top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
@@ -586,7 +586,7 @@ img {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   color: var(--footer-soc-title-color);
 }
 .footer-logo {
@@ -633,17 +633,17 @@ img {
   max-width: 264px;
   color: var(--footer-txt-color);
 }
-.footer-form {
-  display: flex;
-  flex-direction: row;
-}
-.footer-subscribe span {
+.footer-subscribe-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--team-content-bckgd-color);
+}
+.footer-form {
+  display: flex;
+  align-items: flex-end;
 }
 .footer-input {
   display: flex;
@@ -667,10 +667,8 @@ img {
 }
 .footer-btn {
   margin-left: 24px;
-  margin-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+
   align-items: center;
   padding: 8px 24px;
   height: 40px;
